@@ -3,6 +3,7 @@ import alexa from "./assets/images/alexa.png";
 import cortana from "./assets/images/cortana.png";
 import siri from "./assets/images/siri.png";
 const App = () => {
+  const description = "This is Really Helpful";
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>Personal Digital Assistance</h1>
@@ -13,9 +14,24 @@ const App = () => {
           alignItems: "center",
         }}
       >
-        <ProfileCards title="Alexa" handle="@Alexa" image={alexa} />
-        <ProfileCards title="Cortana" handle="@Cortana" image={cortana} />
-        <ProfileCards title="Siri" handle="@Siri" image={siri} />
+        <ProfileCards
+          title="Alexa"
+          handle="@Alexa"
+          image={alexa}
+          description={description}
+        />
+        <ProfileCards
+          title="Cortana"
+          handle="@Cortana"
+          image={cortana}
+          description={description}
+        />
+        <ProfileCards
+          title="Siri"
+          handle="@Siri"
+          image={siri}
+          description={description}
+        />
       </div>
     </div>
   );

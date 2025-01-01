@@ -16,7 +16,7 @@ const ProfileCards = (props) => {
         <React.Fragment>
           <div>Title is {title}</div>
           <div>Handle is {handle}</div>
-          <div>Description:{description}</div>
+          <div>{description}</div>
           <img src={image} alt="image to show" />
         </React.Fragment>
       )}
